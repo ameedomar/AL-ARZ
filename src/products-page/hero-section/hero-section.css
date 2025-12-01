@@ -1,0 +1,9 @@
+.hero-section {
+  width: 100%;
+  height: 37vh; /* Full viewport height */
+  background-image: url(../../images/Product-Banner.jpg);
+
+  background-size: cover; /* make it cover the entire container */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+}

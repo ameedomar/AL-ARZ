@@ -1,0 +1,62 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #195f9b;
+}
+.product-group-title {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 50px 0 ;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px; /* space between boxes */
+  width: 75%;   
+
+  /* padding: 20px; */
+}
+.grid-container-2 {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;  /* يوسّط العنصر أفقيًا */
+  justify-items: center;    /* يوسّط العنصر داخل الخانة */
+}
+.product-image-2 {
+  width: 225px;
+}
+.box {
+  padding: 4px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product-image {
+  width: 335px;
+}
+.product-image:hover {
+  transform: scale(1.15); /* grow 20% larger */
+}
+
+.product-footer {
+  margin-top: 25px;
+}
+
+@media (max-width: 1440px) {
+  .product-image {
+    width: 275px;
+  }
+}
+@media (max-width: 1200px) {
+  .product-image {
+    width: 235px;
+  }
+}
+
+@media (max-width: 994px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
